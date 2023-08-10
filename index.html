@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Météo monde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <input type="text" placeholder="Entrer une ville" id="city" class="form__input" autofocus>
+        <button id="validate" class="form__validate_button" onclick="validation()">OK</button>
+    </div>
+    <div id="error">
+        <img src="https://www.urpsml-hdf.fr/wp-content/uploads/2017/02/attention.png">
+        <span>Veuillez renseigner une ville !</span>
+    </div>
+    <div id="errorName">
+        <img src="https://www.urpsml-hdf.fr/wp-content/uploads/2017/02/attention.png">
+        <span>Nous n'avons pas trouvé cette ville...</span>
+    </div>
+    <div class="current_weather">
+        <h1 class="current_weather__date" id="current_weather__date"></h1>
+        <div class="current_weather__informations">
+            <div class="current_weather__informations__sun">
+                <img class="current_weather__informations__sun__icon" src=""></img>
+                <h3 class="current_weather__informations__sun__description"></h3>
+            </div>
+            <div class="current_weather__informations__temperature">
+                <h3 class="current_weather__informations__temperature__text">température</h3>
+                <h2 class="current_weather__informations__temperature__number"></h2>
+            </div>
+            <div class="current_weather__informations__wind_speed">
+                <h3 class="current_weather__informations__wind_speed__text">vitesse du vent</h3>
+                <h2 class="current_weather__informations__wind_speed__number"></h2>
+            </div>
+            <div class="current_weather__informations__humidity">
+                <h3 class="current_weather__informations__humidity__text">humidité</h3>
+                <h2 class="current_weather__informations__humidity__number"></h2>
+            </div>
+        </div>
+    </div>
+    <h1 class="forecasts__text" id="forecasts__text">Prévisions</h1>
+    <div class="forecasts">
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
